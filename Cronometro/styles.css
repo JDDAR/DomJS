@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@font-face {
+  font-family: PoiretOne;
+  src: url(fonts/PoiretOne-Regular.ttf);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(img/texturejpg) no-repeat center center/ cover;
+}
+
+.contenedor_principal {
+  width: 100vw;
+  height: 50vh;
+  max-width: 600px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contenedor_botones {
+  padding: 40px;
+  overflow: hidden;
+}
+
+#cronometro {
+  width: 100%;
+  font-size: 80px;
+  font-weight: bold;
+  user-select: none;
+  font-family: PoiretOne, sans-serif;
+
+}
+
+/* botones */
+
+.boton {
+  border: none;
+  border-radius: 12px;
+  width: 40%;
+  height: 40%;
+  font-size: 70px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+
+
+}
+
+#boton_inicio_pausa.iniciar,
+#boton_inicio_pausa.iniciar i {
+  background: rgb(151, 209, 65);
+}
+
+#boton_inicio_pausa.pausar,
+#boton_inicio_pausa.pausar i {
+  background: rgb(236, 236, 66);
+}
+
+#boton_reiniciar {
+  background-color: rgb(221, 47, 47);
+}
